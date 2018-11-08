@@ -6,7 +6,7 @@
 .photos__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .photos__header {
@@ -14,9 +14,10 @@
 }
 
 .photos__list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
   .list-style-none;
+  .indents-none;
 }
 
 .photos__item {
@@ -45,7 +46,6 @@
   line-height: 24px;
 }
 
-
 .photos__athor {
   font-size: 14px;
   line-height: 24px;
@@ -72,8 +72,6 @@
 .like__thumb {
   width: 23px;
   height: 23px;
-  /*background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;*/
   .bg-color-white;
   border: 0;
 }
@@ -96,7 +94,6 @@
   .photos__list {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
     flex-wrap: wrap;
     .list-style-none;
     .indents-none;
