@@ -1,14 +1,14 @@
-/*.page-header__intro {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.page-header {
+  display: flex;
+  flex-direction: column;
 }
 
-.page-header__intro-img--index {
-  padding: 86px 0 86px;
+@media (min-width: @tablet-width) {
+  .page-header {
+    .bg-color-white;
+  }
 }
 
-p.page-header__intro-text {
-  .text-align-center;
+@media (min-width: @desktop-width) {
+  .bg-color-white;
 }
-*/
