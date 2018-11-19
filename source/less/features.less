@@ -114,7 +114,19 @@
   /*padding: 45px 0;*/
   width: 320px;
   min-height: 121px;
+  /*background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-size: 330px;
+  background-repeat: no-repeat;
+  background-position-y: 50px;*/
   .bg-color-blue;
+}
+
+.features__tringle svg {
+  background-color: @white;
+}
+
+.features__polygon {
+  fill: @blue;
 }
 
 .features__item-block {
@@ -146,7 +158,13 @@
   background-color: @white;
 }
 
+.features__gray-wrapper {
+  padding: 0 20px;
+  .bg-color-gray;
+}
+
 .features__item--gray {
+  width: 280px;
   .bg-color-gray;
   border-bottom: 1px solid #d6d6d6;
 }
@@ -154,6 +172,10 @@
 .features__description--gray {
   margin: 5px 35px 30px;
   line-height: 21px;
+}
+
+.features__item--gray:last-child {
+  border-bottom: 0;
 }
 
 .features__life {
@@ -251,6 +273,10 @@ margin-top: 28px;
     width: 256px;
     height: 260px;
     .indents-none;
+  }
+
+  .features__tringle {
+    display: none;
   }
 
   .features__item-bridge {
