@@ -6,10 +6,12 @@
 .photos__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .photos__header {
+  padding: 0;
+  margin: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -21,7 +23,7 @@
 }
 
 .photos__item {
-  padding: 22px 0;
+  padding: 22px 20px 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -31,13 +33,14 @@
 }
 
 .photos__title {
-  padding-top: 40px;
+  padding-top: 25px;
   font-size: 18px;
   line-height: 26px;
 }
 
 .photos__intro {
-  padding: 33px 0;
+  padding: 15px 0 25px;
+  margin: 0 25px;
 }
 
 .photos__intro,
@@ -46,10 +49,17 @@
   line-height: 24px;
 }
 
+.photos__legend {
+  margin: 0;
+  padding: 10px 0 0;
+}
+
 .photos__athor {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+  margin: 0;
+  padding: 0;
 }
 
 .photos__like {
@@ -60,7 +70,8 @@
   width: 70px;
   height: 30px;
   .list-style-none;
-  .indents-none;
+  padding: 8px 0 0;
+  margin: 0 0 15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -75,7 +86,8 @@
   }
 
   .photos__header {
-    margin: 45px 100px;
+    margin: 45px 100px 60px;
+    border: 0;
   }
 
   .photos__list {
@@ -89,6 +101,17 @@
   .photos__item {
     padding: 0;
     border-bottom: 0;
+  }
+
+  .photos__title {
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .photos__intro {
+    padding: 10px 0;
+    margin: 0 10px;
   }
 
   .photos__image {
@@ -108,13 +131,23 @@
     font-size: 14px;
     line-height: 24px;
     background-color: #f2f2f2;
-    padding: 0 23px;
+    padding: 0 20px 17px;
+  }
+
+  .photos__legend {
+    margin: 0;
+    padding: 13px 0 0;
+  }
+
+  .photos__athor {
+    padding: 0;
+    margin: 0;
   }
 
   .photos__like {
     justify-content: flex-start;
     align-self: flex-end;
-    margin-bottom: 28px;
+    margin-bottom: 5px;
   }
 }
 
@@ -130,7 +163,17 @@
   }
 
   .photos__header {
-    margin: 45px 300px;
+    margin: 0 300px 57px;
+  }
+
+  .photos__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .photos__intro {
+    padding: 12px 0;
+    margin: 0 85px;
   }
 
   .photos__list {
@@ -167,11 +210,21 @@
     bottom: 0;
     padding: 0;
     width: 100%;
-    background-color: rgba(178, 178, 178, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photos__description-text {
-    color: @white;
-    padding: 0 22px;
+    color: #ffffff;
+    padding: 19px 21px;
+  }
+
+  .photos__legend {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photos__like {
+    margin-right: 16px;
+    margin-bottom: 23px;
   }
 }

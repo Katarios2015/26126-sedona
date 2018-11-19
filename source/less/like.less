@@ -2,6 +2,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+  .indents-none;
 }
 
 .like__thumb {
@@ -9,6 +10,7 @@
   height: 23px;
   .bg-color-white;
   border: 0;
+  .indents-none;
 }
 
 @media (min-width: @tablet-width) {
@@ -20,6 +22,11 @@
 
 @media (min-width: @desktop-width) {
   .like__thumb {
+    margin-right: 12px;
     background-color: rgba(178, 178, 178, 0);
+  }
+
+  .like__number {
+    color: #f2f2f2;
   }
 }
