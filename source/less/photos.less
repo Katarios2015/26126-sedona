@@ -19,11 +19,13 @@
   display: flex;
   flex-direction: column;
   .list-style-none;
-  .indents-none;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .photos__item {
-  padding: 22px 20px 0;
+  padding: 23px 0 0 0;
+  margin-bottom: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -33,13 +35,13 @@
 }
 
 .photos__title {
-  padding-top: 25px;
+  padding-top: 23px;
   font-size: 18px;
   line-height: 26px;
 }
 
 .photos__intro {
-  padding: 15px 0 25px;
+  padding: 14px 0 27px;
   margin: 0 25px;
 }
 
@@ -49,9 +51,18 @@
   line-height: 24px;
 }
 
+.photos__image {
+  width: 280px;
+  height: 280px;
+}
+
+.photos__description {
+  padding-bottom: 11px;
+}
+
 .photos__legend {
   margin: 0;
-  padding: 10px 0 0;
+  padding: 7px 0 0;
 }
 
 .photos__athor {
@@ -65,13 +76,13 @@
 .photos__like {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 70px;
   height: 30px;
   .list-style-none;
   padding: 8px 0 0;
-  margin: 0 0 15px;
+  /*margin: 0 0 15px;*/
 }
 
 @media (min-width: @tablet-width) {
@@ -86,7 +97,7 @@
   }
 
   .photos__header {
-    margin: 45px 100px 60px;
+    margin: 45px 100px 57px;
     border: 0;
   }
 
@@ -110,7 +121,7 @@
   }
 
   .photos__intro {
-    padding: 10px 0;
+    padding: 12px 0;
     margin: 0 10px;
   }
 
@@ -122,7 +133,7 @@
 
   .photos__image--sunset {
     width: 648px;
-    height: 402px;
+    height: 400px;
   }
 
   .photos__description {
@@ -136,7 +147,7 @@
 
   .photos__legend {
     margin: 0;
-    padding: 13px 0 0;
+    padding: 15px 0 0;
   }
 
   .photos__athor {
@@ -201,7 +212,7 @@
 
   .photos__image--sunset {
     width: 1200px;
-    min-height: 403px;
+    height: 400px;
     .indents-none;
   }
 
@@ -210,12 +221,13 @@
     bottom: 0;
     padding: 0;
     width: 100%;
+    height: 81px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photos__description-text {
     color: #ffffff;
-    padding: 19px 21px;
+    padding: 16px 21px;
   }
 
   .photos__legend {
@@ -225,6 +237,6 @@
 
   .photos__like {
     margin-right: 16px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 }

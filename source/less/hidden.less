@@ -1,4 +1,6 @@
-.hidden:not(:focus):not(:active) {
+.hidden:not(:focus):not(:active),
+input[type="checkbox"].hidden,
+input[type="radio"].hidden {
   position: absolute;
   width: 1px;
   height: 1px;

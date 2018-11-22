@@ -1,0 +1,119 @@
+.form-review__field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 25px 20px;
+  border: 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.form-review__field:nth-child(5) {
+  border-bottom: 0;
+}
+
+.form-review__field:last-child {
+  border-bottom: 0;
+}
+
+.form-review__title {
+  margin: 0 20px 20px;
+  padding: 0;
+  .text-align-center;
+}
+
+.form-review__list {
+  .list-style-none;
+  .indents-none;
+}
+
+.form-review__item {
+  /*background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;*/
+  width: 280px;
+  margin-bottom: 14px;
+  padding: 20px 0 20px 77px;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.form-review__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-review__radio + label::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: -76px;
+  top: -19px;
+  .bg-color-gray;
+  border-radius: 50%;
+}
+
+.form-review__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -1px;
+  left: -59px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.form-review__checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: -76px;
+  top: -19px;
+  .bg-color-gray;
+}
+
+.form-review__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -1px;
+  left: -59px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*background-color: #000000;*/
+}
+
+.form-review__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input[placeholder] {
+  font-weight: bold;
+}
+
+.form-review__label-user {
+  margin-right: 13px;
+}
+
+.form-review__input {
+  padding: 20px 0 20px 20px;
+  flex-grow: 1;
+  .bg-color-gray;
+  border: 0;
+}
+
+/*.form-review__field-contacts {
+}*/
+
+.form-review__label-contact {
+  .text-align-center;
+}
