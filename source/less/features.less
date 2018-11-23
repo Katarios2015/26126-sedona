@@ -60,7 +60,7 @@
 
 .features__title--white {
   /*margin: 0 10px 0;*/
-  padding-top: 15px;
+  padding-top: 49px;
   font-size: 18px;
   line-height: 10px;
   color: @white;
@@ -89,7 +89,7 @@
 }
 
 .features__title--number-gray {
-  margin: 6px 0 16px;
+  margin: 0 0 16px;
 }
 
 .features__title--number::before {
@@ -118,10 +118,17 @@
   /*padding: 45px 0;*/
   width: 320px;
   min-height: 121px;
-  /*background-image: url("../img/bg-intro-triangle-mobile.svg");
+  .bg-color-blue;
+}
+
+.features__item-blue--triangle {
+  /*padding: 45px 0;*/
+  width: 320px;
+  min-height: 121px;
+  background-image: url("../img/bg-triangle.svg");
   background-size: 330px;
   background-repeat: no-repeat;
-  background-position-y: 50px;*/
+  background-position-y: -23px;
   .bg-color-blue;
 }
 
@@ -162,20 +169,20 @@
   background-color: @white;
 }
 
-/*.features__gray-wrapper {
-  padding: 0 20px;
-  .bg-color-gray;
-}*/
+br {
+  display: none;
+}
 
 .features__item--gray {
   margin: 0;
-  padding: 29px 0;
+  padding: 23px 0 33px;
   .bg-color-gray;
   border-bottom: 1px solid #d6d6d6;
 }
 
 .features__title--gray {
-  .indents-none;
+  padding: 0;
+  margin: 0 0 11px;
 }
 
 .features__description--gray {
@@ -292,8 +299,8 @@ margin-top: 28px;
     .indents-none;
   }
 
-  .features__tringle {
-    display: none;
+  .features__item-blue--triangle {
+    background-image: none;
   }
 
   .features__item-bridge {
@@ -392,6 +399,10 @@ margin-top: 28px;
     border-bottom: 0;
   }
 
+  br {
+    display: inline;
+  }
+
   .features__description--gray {
     padding: 0;
     margin: 7px 0 0 0;
@@ -402,7 +413,7 @@ margin-top: 28px;
   }
 
   .features__title--gray {
-    margin: 44px;
+    margin: 43px 0 0;
   }
 }
 
@@ -484,11 +495,27 @@ margin-top: 28px;
     padding-top: 22px;
   }
 
+  .features__life--house {
+    width: 277px;
+  }
+
+  .features__life--food {
+    width: 292px;
+  }
+
+  .features__life--gift {
+    width: 276px;
+  }
+
   .features__item--gray {
     display: flex;
     flex-direction: column;
     width: 280px;
     padding: 0 60px;
+  }
+
+  br {
+    display: none;
   }
 
   .features__title--gray {
